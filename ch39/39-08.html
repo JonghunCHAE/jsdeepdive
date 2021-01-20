@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul>
+            <li id="apple">Apple</li>
+            <li id="banana">Banana</li>
+            <li id="orange">Orange</li>
+        </ul>
+        <script>
+            const $elems = document.getElementsByTagName("li");
+
+            [...$elems].forEach(elem => {elem.style.color = 'red';});
+
+            const $all = document.getElementsByTagName("*");
+
+            console.log($all);
+        </script>
+    </body>
+</html>
